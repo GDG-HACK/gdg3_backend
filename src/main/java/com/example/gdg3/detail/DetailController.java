@@ -23,9 +23,6 @@ public class DetailController {
 
         System.out.println(storeDetailDto.getStoreInfo().getInfo());
 
-        //String jsonInString = objectMapper.writeValueAsString(storeDetailDto);
-
-
         return new BaseResponse<>(storeDetailDto);
 
     }
