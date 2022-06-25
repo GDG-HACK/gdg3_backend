@@ -3,23 +3,26 @@ import javax.persistence.*;
 import java.sql.Time;
 
 @Entity
+@Table(name = "store")
 public class Store {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "store_id")
     private Long id;
 
     // @Column(name = "store_name")
     private String storeName;
 
+
     private String latitude;
 
 
-    private String longitude;
+    private String longtitude;
 
     private String intro;
 
     private String address;
+
 
     private String phoneNum;
 
@@ -37,6 +40,8 @@ public class Store {
 
     private String storeTag3;
 
+    private String categoryName
+;
     public Long getId() {
         return id;
     }
@@ -62,11 +67,11 @@ public class Store {
     }
 
     public String getLongitude() {
-        return longitude;
+        return longtitude;
     }
 
     public void setLongitude(String longitude) {
-        this.longitude = longitude;
+        this.longtitude = longitude;
     }
 
     public String getIntro() {
