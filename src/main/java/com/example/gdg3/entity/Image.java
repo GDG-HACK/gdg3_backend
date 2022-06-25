@@ -1,4 +1,4 @@
-package entity;
+package com.example.gdg3.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,20 +6,20 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "menu")
-@Getter
-@Setter
-public class Menu {
+@Table(name = "image")
+@Getter @Setter
+public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long menuId;
+    private long imgId;
 
-    private String menuName;
+    private String imgUrl;
 
-    private int price;
+    private int order;
+
+    private boolean isMenu;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "store_id")
     private Store store;
-
 }
