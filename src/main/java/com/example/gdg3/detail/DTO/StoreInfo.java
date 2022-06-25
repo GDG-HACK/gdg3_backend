@@ -39,11 +39,11 @@ public class StoreInfo {
         this.address = store.getAddress();
         this.latitude = store.getLatitude();
         this.longtitude = store.getLongitude();
-        this.shopTag1 = List.of(store.getStoreTag1().split(";"));
-        this.shopTag2 = List.of(store.getStoreTag2().split(";"));
-        this.shopTag3 = List.of(store.getStoreTag3().split(";"));
-        this.openingHours = String.valueOf(store.getOpeningTime()) + "~" + String.valueOf(store.getClosingTime());
-        this.breakingHours = String.valueOf(store.getBreakingStart()) + "~" + String.valueOf(store.getBreakingEnd());
+        this.shopTag1 = store.getStoreTag1() == null ? List.of("휠체어 사용자") : List.of(store.getStoreTag1().split(";"));
+        this.shopTag2 = store.getStoreTag1() == null ? List.of("어린이") : List.of(store.getStoreTag2().split(";"));
+        this.shopTag3 = store.getStoreTag1() == null ? List.of("반려동물") : List.of(store.getStoreTag3().split(";"));
+        this.openingHours = String.valueOf(store.getOpeningTime()).equals("null") ? "" : String.valueOf(store.getOpeningTime()) + "~" + String.valueOf(store.getClosingTime());
+        this.breakingHours = String.valueOf(store.getBreakingStart()).equals("null") ? "" : String.valueOf(store.getBreakingStart()) + "~" + String.valueOf(store.getBreakingEnd());
         this.info = store.getIntro();
     }
 }

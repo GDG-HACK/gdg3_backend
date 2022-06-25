@@ -10,12 +10,9 @@ import java.util.List;
 @Getter
 @ToString
 public class ReviewInfo {
-    private String nickname;
+    List<ReviewObject> reviewList;
 
-    private List<String> tags;
-
-    private String content;
-
-    private String createdAt;
-
+    public ReviewInfo(List<ReviewObject> reviewList) {
+        this.reviewList = reviewList;
+    }
 }
