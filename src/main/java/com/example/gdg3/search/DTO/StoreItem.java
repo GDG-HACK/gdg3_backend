@@ -1,4 +1,4 @@
-package com.example.gdg3.detail.DTO;
+package com.example.gdg3.search.DTO;
 
 import com.example.gdg3.entity.Store;
 import lombok.Getter;
@@ -7,10 +7,10 @@ import lombok.ToString;
 
 import java.util.List;
 
-@Setter
 @Getter
+@Setter
 @ToString
-public class StoreInfo {
+public class StoreItem {
     private String name;
 
     private String phoneNum;
@@ -33,7 +33,9 @@ public class StoreInfo {
 
     private String info;
 
-    public StoreInfo(Store store) {
+    public String imgUrl;
+
+    public StoreItem(Store store, String imgUrl) {
         this.name = store.getStoreName();
         this.phoneNum = store.getPhoneNum();
         this.address = store.getAddress();
@@ -45,5 +47,6 @@ public class StoreInfo {
         this.openingHours = String.valueOf(store.getOpeningTime()) + "~" + String.valueOf(store.getClosingTime());
         this.breakingHours = String.valueOf(store.getBreakingStart()) + "~" + String.valueOf(store.getBreakingEnd());
         this.info = store.getIntro();
+        this.imgUrl = imgUrl;
     }
 }

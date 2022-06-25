@@ -11,7 +11,7 @@ import javax.persistence.*;
 public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long imgId;
+    private Long imgId;
 
     private String imgUrl;
 

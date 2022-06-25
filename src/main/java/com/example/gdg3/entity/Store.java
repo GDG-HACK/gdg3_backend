@@ -13,10 +13,9 @@ public class Store {
     // @Column(name = "store_name")
     private String storeName;
 
-    private String latitude;
+    private float latitude;
 
-
-    private String longitude;
+    private float longitude;
 
     private String intro;
 
@@ -38,8 +37,8 @@ public class Store {
 
     private String storeTag3;
 
-    private String categoryName
-;
+    private String categoryName;
+
     public Long getId() {
         return id;
     }
@@ -56,19 +55,19 @@ public class Store {
         this.storeName = storeName;
     }
 
-    public String getLatitude() {
+    public float getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(String latitude) {
+    public void setLatitude(float latitude) {
         this.latitude = latitude;
     }
 
-    public String getLongitude() {
+    public float getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(String longitude) {
+    public void setLongitude(float longitude) {
         this.longitude = longitude;
     }
 
