@@ -3,9 +3,10 @@ import javax.persistence.*;
 import java.sql.Time;
 
 @Entity
+@Table(name = "store")
 public class Store {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "store_id")
     private Long id;
 
@@ -37,6 +38,8 @@ public class Store {
 
     private String storeTag3;
 
+    private String categoryName
+;
     public Long getId() {
         return id;
     }
