@@ -1,6 +1,7 @@
 package com.example.gdg3.detail;
 
 import com.example.gdg3.detail.DTO.*;
+import com.example.gdg3.entity.Image;
 import com.example.gdg3.entity.Menu;
 import com.example.gdg3.entity.Review;
 import com.example.gdg3.entity.Store;
@@ -16,6 +17,8 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DetailService {
 
+    private final ImgRepository imgRepository;
+
     private final MenuRepository menuRepository;
 
     private final ReviewRepository reviewRepository;
@@ -24,6 +27,14 @@ public class DetailService {
 
     public StoreDetailDto getShopDetail(long storeId) {
         StoreDetailDto storeDetailDto = new StoreDetailDto();
+
+        //이미지 정보 가져오기
+        List<Image> images = imgRepository.findByStoreId(storeId);
+        List<String> imgList = new ArrayList<>();
+        images.forEach(one -> {
+            imgList.add(one.getImgUrl());
+        });
+        storeDetailDto.setImgInfo(new ImgInfo(imgList));
 
         //가게 정보 가져오기
         Store store = storeRepository.findStoreById(storeId);

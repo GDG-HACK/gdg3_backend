@@ -7,7 +7,7 @@ import lombok.ToString;
 @Setter @Getter
 @ToString
 public class StoreDetailDto {
-    private Long shopCount;
+    private ImgInfo imgInfo;
 
     private StoreInfo storeInfo;
 
