@@ -1,5 +1,4 @@
 package entity;
-
 import javax.persistence.*;
 import java.sql.Time;
 
