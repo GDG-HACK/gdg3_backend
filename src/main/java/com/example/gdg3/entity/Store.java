@@ -21,6 +21,7 @@ public class Store {
 
     private String address;
 
+
     private String phoneNum;
 
     private Time openingTime;
