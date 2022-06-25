@@ -13,14 +13,16 @@ public class Store {
     // @Column(name = "store_name")
     private String storeName;
 
+
     private String latitude;
 
 
-    private String longitude;
+    private String longtitude;
 
     private String intro;
 
     private String address;
+
 
     private String phoneNum;
 
@@ -65,11 +67,11 @@ public class Store {
     }
 
     public String getLongitude() {
-        return longitude;
+        return longtitude;
     }
 
     public void setLongitude(String longitude) {
-        this.longitude = longitude;
+        this.longtitude = longitude;
     }
 
     public String getIntro() {

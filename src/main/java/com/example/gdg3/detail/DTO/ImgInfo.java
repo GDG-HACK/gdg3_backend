@@ -9,10 +9,11 @@ import java.util.List;
 @Setter
 @Getter
 @ToString
-public class ReviewInfo {
-    List<ReviewObject> reviewList;
+public class ImgInfo {
 
-    public ReviewInfo(List<ReviewObject> reviewList) {
-        this.reviewList = reviewList;
+    private List<String> imgList;
+
+    public ImgInfo(List<String> imgList) {
+        this.imgList = imgList;
     }
 }
