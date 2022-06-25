@@ -17,9 +17,9 @@ public class StoreInfo {
 
     private String address;
 
-    private String latitude;
+    private float latitude;
 
-    private String longtitude;
+    private float longitude;
 
     private List<String> shopTag1;
 
@@ -44,6 +44,7 @@ public class StoreInfo {
         this.shopTag3 = store.getStoreTag1() == null ? List.of("반려동물") : List.of(store.getStoreTag3().split(";"));
         this.openingHours = String.valueOf(store.getOpeningTime()).equals("null") ? "" : String.valueOf(store.getOpeningTime()) + "~" + String.valueOf(store.getClosingTime());
         this.breakingHours = String.valueOf(store.getBreakingStart()).equals("null") ? "" : String.valueOf(store.getBreakingStart()) + "~" + String.valueOf(store.getBreakingEnd());
+
         this.info = store.getIntro();
     }
 }
