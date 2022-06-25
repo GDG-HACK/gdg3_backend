@@ -1,4 +1,4 @@
-package entity;
+package com.example.gdg3.entity;
 import javax.persistence.*;
 import java.sql.Time;
 

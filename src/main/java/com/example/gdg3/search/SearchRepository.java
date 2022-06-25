@@ -1,12 +1,10 @@
-package search;
+package com.example.gdg3.search;
 
-import entity.Store;
+import com.example.gdg3.entity.Store;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.Optional;
 
 @Transactional
 public interface SearchRepository extends JpaRepository<Store, Long> {
