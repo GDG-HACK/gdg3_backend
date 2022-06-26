@@ -5,14 +5,14 @@
 
 <div align="center">
 
-![image](https://user-images.githubusercontent.com/54930365/175793135-404f5e7a-c9eb-49c9-aca6-d7107db716c3.png)
+<img width="400" src="https://user-images.githubusercontent.com/54930365/175797704-5d6f81f8-e9af-43fd-b924-96e5c2306c5c.png">
 
 ### _📍포인트 1. 태그 기반의 상세 검색이 가능해요!_
 
-![image](https://user-images.githubusercontent.com/54930365/175793144-7a2ad44f-ac65-4e17-9ec2-e1d0054a187a.png)
+<img width="400" src="https://user-images.githubusercontent.com/54930365/175797715-bddba508-8d92-488b-865c-f134707cb936.png">
 
 ### _📍포인트 2. 태그 기반의 상세한 맛집 정보를 공유할 수 있어요!_
-![image](https://user-images.githubusercontent.com/54930365/175793116-bf342ea9-1358-4213-96e8-bf6d88276e2e.png)
+<img width="400" src="https://user-images.githubusercontent.com/54930365/175797718-376e5dee-8dce-47ac-8627-fa290e4c0e62.png">
 
 ### _📍포인트 3. 모두 다 함께 즐겨요!_
 <br><br>
