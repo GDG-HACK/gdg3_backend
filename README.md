@@ -1,6 +1,7 @@
 # 🔍 편할지도
 
 ### 🚩 편할지도는 어린이, 교통약자, 반려동물을 위한 배리어프리 맛집 지도🔎 어플 입니다.  
+#### 🚩 GDG SUMMER OFF-FESTIVEAL 데카콘상(2등)🏆
 
 
 <div align="center">
@@ -22,7 +23,7 @@
 <img width="700" alt="스크린샷 2022-06-26 오전 8 45 49" src="https://user-images.githubusercontent.com/54930365/175793794-d8eaf99e-6b62-49ee-9e59-0f88814709d3.png">
 
 <span><img width=10% src="https://user-images.githubusercontent.com/54930365/175793830-308613f3-0c72-415f-8f83-7a8c86c464fd.png">   
-GDG SUMMER 해커톤
+GDG SUMMER OFF-FESTIVEAL
 
 </div>
 
